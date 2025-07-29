@@ -2,7 +2,7 @@
 
 ## Notes
 
-I created this project using NextJs. Given more time, I would add more error handling and make it work with dark mode properly in the browser. For now, it at least fits the brief. I would also make the chart responsively change size with browser resizing.
+I created this project using NextJs. Given more time, I would add more error handling and make it work with dark mode properly in the browser. For now, it at least fits the brief. I would also make the chart responsively change size with browser resizing. I would also look for more unnecessary nextjs starter app code to remove.
 
 ## Setup
 
