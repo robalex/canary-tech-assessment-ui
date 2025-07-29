@@ -42,7 +42,6 @@ export default function Home() {
   const [labels, setLabels] = useState<string[]>([]);
   const [estimatedValues, setEstimatedValues] = useState<number[]>([]);
   const [measuredValues, setMeasuredValues] = useState<number[]>([]);
-  const [error, setError] = useState<string | null>(null);
 
   const updateGraph = async(e: React.ChangeEvent<HTMLSelectElement> | null) => {
     console.log('Fetching emissions data...');
@@ -65,7 +64,7 @@ export default function Home() {
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start w-full max-w-none">
         <Image
-          src="/Project-Canary-logo-white-300x71.webp"
+          src="/Project-Canary-Logo-2024@2x-160x37.webp"
           alt="Project Canary logo"
           width={180}
           height={38}
@@ -73,7 +72,11 @@ export default function Home() {
         />
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           Order By:
-          <select onChange={updateGraph} defaultValue="yearAndMonth">
+          <select
+            onChange={updateGraph}
+            defaultValue="yearAndMonth"
+            className="border border-gray-300 rounded bg-white text-black px-2 py-1"
+          >
             <option value="emissionSite">Emission Site</option>
             <option value="equipmentGroup">Equipment Group</option>
             <option value="yearAndMonth">Month</option>
